@@ -1,0 +1,8 @@
+x = int(input())
+y = int(input())
+
+if x < y:
+    z = y-((10*10/100)+x)
+    print (z)
+else:
+    print ('LOL')
