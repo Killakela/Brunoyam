@@ -1,0 +1,13 @@
+n = int(input())
+
+peng = [("   _~_    "),
+        ('  (o o)   '),
+        (' /  V  \  '),
+        ('/(  _  )\\ '),
+        ('  ^^ ^^   ')]
+
+print (peng[0]*n)
+print (peng[1]*n)
+print (peng[2]*n)
+print (peng[3]*n)
+print (peng[4]*n)
