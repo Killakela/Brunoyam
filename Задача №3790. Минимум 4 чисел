@@ -1,9 +1,8 @@
-a = int(input())
-b = int(input())
-c = int(input())
-v = int(input())
-
-def min4(a, b, c, v):
+def min4():
+    a = int(input())
+    b = int(input())
+    c = int(input())
+    v = int(input())
     return min(a,b,c,v)
 
-print (min)
+print (min4())
