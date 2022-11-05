@@ -1,0 +1,31 @@
+class Bot_signal:
+    def __init__(self, lastdayrange, lastdayvolume, buystatus, sellstatus):
+        self.lastdayrange = lastdayrange
+        self.lastdayvolume = lastdayvolume
+        self.buystatus = buystatus
+        self.sellstatus = sellstatus
+
+    def __repr__(self):
+        return f" Диапозон и обьем за вчерашний день {self.lastdayrange};{self.lastdayvolume}  "
+
+    def buy_signal(self, dayrange, dayvolume):
+        self.lastdayrange -= dayrange
+        self.lastdayvolume -= dayvolume
+        self.buystatus = 'Покупай'
+        return self.buystatus
+
+    buy_day = buy_signal(dayrange=4, dayvolume=5)
+
+    def sell_signal(self, drange, dvolume):
+        self.lastdayrange -= drange
+        self.lastdayrange -= dvolume
+        self.sellstatus = 'Продавай'
+        return self.sellstatus
+
+    sell_day = sell_signal(drange=5, dvolume=7)
+
+
+day1 = Bot_signal(5, 3, 0, 1)
+day2 = Bot_signal(4, 1, 0, 1)
+
+print(day1.sell_signal(1, 2))
