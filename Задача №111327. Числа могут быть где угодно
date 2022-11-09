@@ -1,0 +1,3 @@
+with open("C:/Users/Mike/PycharmProjects/Test1/textdocument.txt") as f:
+    text = f.read()
+    print(sum(map(int, text.split(None, 2)[:2])))
