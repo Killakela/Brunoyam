@@ -1,0 +1,4 @@
+with open("C:/Users/Mike/PycharmProjects/Test1/textdocument.txt") as f:
+    text = f.readlines()
+    for i in text[::-1]:
+        print(i.replace('\n', ' '))
