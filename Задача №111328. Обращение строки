@@ -1,0 +1,4 @@
+with open("C:/Users/Mike/PycharmProjects/Test1/textdocument.txt") as f:
+    text = f.read()
+    print(text[::-1])
+    f.close()
