@@ -1,0 +1,10 @@
+text = open("C:/Users/Mike/PycharmProjects/Test1/textdocument.txt", 'r')
+data = text.read()
+num1 = len(data) - data.count(" ")
+num2 = data.split()
+num3 = data.count('\n')
+
+
+print('количестов символов без пробелов:', num1)
+print('количество слов:', len(num2))
+print('количество строк:', num3)
