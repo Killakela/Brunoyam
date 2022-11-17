@@ -1,0 +1,4 @@
+stroka = '1+1=2'
+new_stroka = stroka.replace('1', 'one')
+
+print(new_stroka)
